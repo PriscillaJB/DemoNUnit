@@ -1,0 +1,8 @@
+C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplication\bin\Debug\SomeConsoleApplication.exe.config
+C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplication\bin\Debug\SomeConsoleApplication.exe
+C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplication\bin\Debug\SomeConsoleApplication.pdb
+C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplication\obj\Debug\SomeConsoleApplication.csproj.AssemblyReference.cache
+C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplication\obj\Debug\SomeConsoleApplication.csproj.SuggestedBindingRedirects.cache
+C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplication\obj\Debug\SomeConsoleApplication.csproj.CoreCompileInputs.cache
+C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplication\obj\Debug\SomeConsoleApplication.exe
+C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplication\obj\Debug\SomeConsoleApplication.pdb
