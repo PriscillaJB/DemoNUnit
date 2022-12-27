@@ -1,0 +1,56 @@
+# .NET Desktop
+# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+  name: Token-Agente
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: NuGetToolInstaller@1
+
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'Sonarqube-Azure-2-PruebaNUnit'
+    scannerMode: 'MSBuild'
+    projectKey: 'PruebaNUnit_PruebaNUnit'
+    projectName: 'PruebaNUnit'
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: MSBuild@1
+  inputs:
+    solution: '**/*.sln'
+    msbuildVersion: '17.0'
+    msbuildArchitecture: 'x64'
+
+- task: VSTest@2
+  inputs:
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*test*.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    platform: '$(buildPlatfrom)'
+    configuration: '$(buildConfiguration)'
+    runTestsInIsolation: true
+    testRunTitle: 'Test'
+    codeCoverageEnabled: true
+
+- task: SonarQubeAnalyze@5
+
+- task: SonarQubePublish@5
+  inputs:
+    pollingTimeoutSec: '300'
