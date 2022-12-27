@@ -1,6 +1,5 @@
 C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplicationTest\bin\Debug\SomeConsoleApplicationTest.dll
 C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplicationTest\bin\Debug\SomeConsoleApplicationTest.pdb
-C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplicationTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplicationTest\bin\Debug\nunit.framework.dll
 C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplicationTest\bin\Debug\SomeConsoleApplication.exe
 C:\sonarqube-scanner\sonarqube-scanner-msbuild\CSharpProject\SomeConsoleApplicationTest\bin\Debug\SomeConsoleApplication.pdb
